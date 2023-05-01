@@ -11,7 +11,7 @@ export default function LoginForm({Login, error}) {
     <form onSubmit={submitHandler}>
     <h2>Login Form</h2>
     <div className='inpt'>
-        {error != "" ? (<p>{error}</p>) : "" }
+        {error !== "" ? (<p>{error}</p>) : "" }
         <label>Username : </label><br/>
         <input type='text' placeholder='Username' onChange={e=>setDetails({...details, name : e.target.value})}/>
     </div>

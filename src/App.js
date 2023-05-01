@@ -1,4 +1,4 @@
-import react, { useState } from 'react';
+import { useState } from 'react';
 import LoginForm from './LoginForm';
 
 function App(){
@@ -28,7 +28,7 @@ function App(){
 
     return(
       <div className='App'>
-        {(user.email != '') ? 
+        {(user.email !== '') ? 
         <div className='hello'>
           <h2>Welcome "{user.name}"</h2>
           <button onClick={Logout}>Log out</button>
